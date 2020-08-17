@@ -1,0 +1,13 @@
+Objet elevage :
+- 3 de chaques
+- Acheter meilleur rapport Efficacité/Utilisation restante, privilégier efficacité
+
+- Caresseur = + serenité - agressivité
+- Baffeur = + agressivité - serenité
+- Dragofesse = + amour
+- Foudroyeur = + endurance
+- Abreuvoir = + maturité
+
+Maturité rend montable
+Reproduction lvl 5
+Plus energie élèvé, plus % elevée pour + d'enfant
