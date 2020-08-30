@@ -1,22 +1,22 @@
 # WriteUp
 Ce repo est destiné à accueillir mes solutions des différentes boxes du site hack the box.
 
-Facile :
-      Blue  
-      Legacy
-      Lame
-      Jerry
-      Netmon
-      Granny
-      Bashed
-      Blocky
-      Optimum
-      Grandpa
-      Sense
-      Beep
-      Mirai
-      Shocker
-      Devel
+Facile :  
+      Blue              OK  
+      Legacy            OK  
+      Lame              OK  
+      Jerry             OK  
+      Netmon            OK  
+      Granny            OK  
+      Bashed            OK  
+      Blocky            OK  
+      Optimum           OK  
+      Grandpa           OK  
+      Sense             OK  
+      Beep              OK  
+      Mirai             OK  
+      Shocker           OK  
+      Devel             OK
       Nibbles
       Bank
       Valentine
