@@ -16,7 +16,7 @@ Facile :
       Beep              OK  
       Mirai             OK  
       Shocker           OK  
-      Devel             OK
+      Devel             OK  
       Nibbles
       Bank
       Valentine
