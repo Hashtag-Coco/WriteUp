@@ -17,7 +17,9 @@ Facile :
       Mirai             OK  
       Shocker           OK  
       Devel             OK  
-      Nibbles
+      Nibbles           OK  
+      
+   Restant :  
       Bank
       Valentine
       Arctic
