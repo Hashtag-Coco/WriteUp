@@ -18,9 +18,9 @@ Facile :
       Shocker           OK  
       Devel             OK  
       Nibbles           OK  
-      
+      Bank              OK  
+     
    Restant :  
-      Bank
       Valentine
       Arctic
       SwagShop
