@@ -19,9 +19,10 @@ Facile :
       Devel             OK  
       Nibbles           OK  
       Bank              OK  
+      Valentine         OK  
+      
      
    Restant :  
-      Valentine
       Arctic
       SwagShop
       ServMon
