@@ -20,11 +20,11 @@ Facile :
       Nibbles           OK  
       Bank              OK  
       Valentine         OK  
-      
+      Arctic		OK  
+      SwagShop		OK  
+
      
    Restant :  
-      Arctic
-      SwagShop
       ServMon
       Sunday
       Help
