@@ -22,10 +22,11 @@ Facile :
       Valentine         OK  
       Arctic		OK  
       SwagShop		OK  
+      ServMon           OK (user only)  
+      
 
      
    Restant :  
-      ServMon
       Sunday
       Help
       Help
