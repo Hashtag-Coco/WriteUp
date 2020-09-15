@@ -27,8 +27,7 @@ Facile :
 
      
    Restant :  
-      Sunday
-      Help
+      Sunday (capt)  
       Help
       Access
       Irked
