@@ -23,11 +23,11 @@ Facile :
       Arctic		OK  
       SwagShop		OK  
       ServMon           OK (user only)  
-      
+      Sunday            OK  
+            
 
      
    Restant :  
-      Sunday (capt)  
       Help
       Access
       Irked
