@@ -24,13 +24,13 @@ Facile :
       SwagShop		OK  
       ServMon           OK (user only)  
       Sunday            OK  
+      Help		OK  
+      Access		OK  
+      Irked		OK  
             
 
      
    Restant :  
-      Help
-      Access
-      Irked
       OpenAdmin
       Postman
       Curling
