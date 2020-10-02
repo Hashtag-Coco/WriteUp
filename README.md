@@ -3,7 +3,7 @@ Ce repo est destiné à accueillir mes solutions des différentes boxes du site 
 
 ## Facile
 ```bash  
-Blue		- [X]	Legacy		- [X]	Lame		- [X]	Jerry		- [X]
+Blue	[X]	Legacy	[X]	Lame	[X]	Jerry	[X]
 Netmon            OK  
 Granny            OK  
 Bashed            OK  
