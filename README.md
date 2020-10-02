@@ -2,8 +2,8 @@
 Ce repo est destiné à accueillir mes solutions des différentes boxes du site hack the box.
 
 ## Facile
-```bash  
 Blue	- [x]	Legacy	- [x]	Lame	- [x]	Jerry	- [x]	Netmon	- [x]	Granny	- [x]  
+```bash
 Bashed            OK  
 Blocky            OK  
 Optimum           OK  
