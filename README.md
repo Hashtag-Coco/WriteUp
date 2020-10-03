@@ -9,4 +9,4 @@ Arctic - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;SwagShop - [:heavy_ch
 Irked - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;OpenAdmin - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Postman - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Curling - []&ensp;&ensp;&ensp;&ensp;&ensp;TraceBack - []&ensp;&ensp;&ensp;&ensp;&ensp;WriteUp - []</br>
 Active - []&ensp;&ensp;&ensp;&ensp;&ensp;Networked - []&ensp;&ensp;&ensp;&ensp;&ensp;Bastion - []&ensp;&ensp;&ensp;&ensp;&ensp;Bounty - []&ensp;&ensp;&ensp;&ensp;&ensp;Traverxec - []&ensp;&ensp;&ensp;&ensp;&ensp;Sauna - []</br>
 Haystack - []&ensp;&ensp;&ensp;&ensp;&ensp;Heist - []&ensp;&ensp;&ensp;&ensp;&ensp;Teacher - []&ensp;&ensp;&ensp;&ensp;&ensp;LaCasaDePapel - []&ensp;&ensp;&ensp;&ensp;&ensp;FriendZone - []&ensp;&ensp;&ensp;&ensp;&ensp;Nest - []</br>
-Safe - []&ensp;&ensp;&ensp;&ensp;&ensp;Frolic - []&ensp;&ensp;&ensp;&ensp;&ensp;Forest - []&ensp;&ensp;&ensp;&ensp;&ensp;
+Safe - []&ensp;&ensp;&ensp;&ensp;&ensp;Frolic - []&ensp;&ensp;&ensp;&ensp;&ensp;Forest - []&ensp;&ensp;&ensp;&ensp;&ensp;Admirer - []&ensp;&ensp;&ensp;&ensp;&ensp;
