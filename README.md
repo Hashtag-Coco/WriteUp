@@ -3,12 +3,8 @@ Ce repo est destiné à accueillir mes solutions des différentes boxes du site 
 
 ## Facile
 Blue - [:heavy_check_mark:]&ensp;&ensp;&ensp;Legacy - [:heavy_check_mark:]&ensp;&ensp;&ensp;Lame - [:heavy_check_mark:]&ensp;&ensp;&ensp;Jerry - [:heavy_check_mark:]&ensp;&ensp;&ensp;Netmon - [:heavy_check_mark:]&ensp;&ensp;&ensp;Granny - [:heavy_check_mark:] </br>
-Bashed - [:heavy_check_mark:]&ensp;&ensp;&ensp;Blocky - [:heavy_check_mark:]&ensp;&ensp;&ensp;Optimum - [:heavy_check_mark:]&ensp;&ensp;&ensp;Grandpa - [:heavy_check_mark:]&ensp;&ensp;&ensp;
+Bashed - [:heavy_check_mark:]&ensp;&ensp;&ensp;Blocky - [:heavy_check_mark:]&ensp;&ensp;&ensp;Optimum - [:heavy_check_mark:]&ensp;&ensp;&ensp;Grandpa - [:heavy_check_mark:]&ensp;&ensp;&ensp;Sense - [:heavy_check_mark:]&ensp;&ensp;&ensp;Beep - [:heavy_check_mark:] </br>
 ```bash
-Bashed            OK  
-Blocky            OK  
-Optimum           OK  
-Grandpa           OK  
 Sense             OK  
 Beep              OK  
 Mirai             OK  
