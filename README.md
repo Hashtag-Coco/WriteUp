@@ -3,7 +3,7 @@ Ce repo est destiné à accueillir mes solutions des différentes boxes du site 
 
 ## Facile
 Blue - [:heavy_check_mark:]&ensp;&ensp;&ensp;Legacy - [:heavy_check_mark:]&ensp;&ensp;&ensp;Lame	- [x]	Jerry	- [x]	Netmon	- [x]	Granny	- [x]  
-- [x] Venus - [x] Venus
+- :white_check_mark: Venus - :black_square: :white_square: Venus
 ```bash
 Bashed            OK  
 Blocky            OK  
