@@ -2,7 +2,7 @@
 Ce repo est destiné à accueillir mes solutions des différentes boxes du site hack the box.
 
 ## Facile
-Blue	- [:heavy_check_mark:]&nbsp;Legacy	- [x]	Lame	- [x]	Jerry	- [x]	Netmon	- [x]	Granny	- [x]  
+Blue	- [:heavy_check_mark:] &ensp; Legacy	- [x]	Lame	- [x]	Jerry	- [x]	Netmon	- [x]	Granny	- [x]  
 - [x] Venus - [x] Venus
 ```bash
 Bashed            OK  
