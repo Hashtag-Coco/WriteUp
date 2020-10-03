@@ -2,8 +2,8 @@
 Ce repo est destiné à accueillir mes solutions des différentes boxes du site hack the box.
 
 ## Facile
-Blue - [:heavy_check_mark:]&ensp;&ensp;&ensp;Legacy - [:heavy_check_mark:]&ensp;&ensp;&ensp;Lame - [:heavy_check_mark:]&ensp;&ensp;&ensp;Jerry - [:heavy_check_mark:]&ensp;&ensp;&ensp;Netmon - [:heavy_check_mark:]&ensp;&ensp;&ensp;Granny - [:heavy_check_mark:]&ensp;&ensp;&ensp;  
-- :white_check_mark: Venus - :black_square: :white_square: Venus
+Blue - [:heavy_check_mark:]&ensp;&ensp;&ensp;Legacy - [:heavy_check_mark:]&ensp;&ensp;&ensp;Lame - [:heavy_check_mark:]&ensp;&ensp;&ensp;Jerry - [:heavy_check_mark:]&ensp;&ensp;&ensp;Netmon - [:heavy_check_mark:]&ensp;&ensp;&ensp;Granny - [:heavy_check_mark:] </br>
+Bashed - [:heavy_check_mark:]&ensp;&ensp;&ensp;Blocky - [:heavy_check_mark:]&ensp;&ensp;&ensp;Optimum - [:heavy_check_mark:]&ensp;&ensp;&ensp;Grandpa - [:heavy_check_mark:]&ensp;&ensp;&ensp;
 ```bash
 Bashed            OK  
 Blocky            OK  
