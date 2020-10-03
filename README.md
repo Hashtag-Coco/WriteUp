@@ -6,12 +6,9 @@ Blue - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Legacy - [:heavy_check_
 Bashed - [:heavy_check_mark:]&ensp;&ensp;&ensp;Blocky - [:heavy_check_mark:]&ensp;&ensp;&ensp;Optimum - [:heavy_check_mark:]&ensp;&ensp;&ensp;Grandpa - [:heavy_check_mark:]&ensp;&ensp;&ensp;Sense - [:heavy_check_mark:]&ensp;&ensp;&ensp;Beep - [:heavy_check_mark:] </br>
 Mirai - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Shocker - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Devel - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Nibbles - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Bank - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Valentine - [:heavy_check_mark:]</br>
 Arctic - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;SwagShop - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;ServMon - [user :heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Sunday - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Help - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Access - [:heavy_check_mark:]</br>
-Irked - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;OpenAdmin - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Postman - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
+Irked - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;OpenAdmin - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Postman - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;Curling - []&ensp;&ensp;&ensp;&ensp;&ensp;TraceBack - []&ensp;&ensp;&ensp;&ensp;&ensp;WriteUp - []</br>
+Active - []&ensp;&ensp;&ensp;&ensp;&ensp;Networked - []&ensp;&ensp;&ensp;&ensp;&ensp;Bastion - []&ensp;&ensp;&ensp;&ensp;&ensp;Bounty - []&ensp;&ensp;&ensp;&ensp;&ensp;Traverxec - []&ensp;&ensp;&ensp;&ensp;&ensp;Sauna - []&ensp;&ensp;&ensp;&ensp;&ensp;
 
-
-      Curling
-      TraceBack
-      Writeup
       Active
       Networked
       Bastion
