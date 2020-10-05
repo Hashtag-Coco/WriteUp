@@ -2,7 +2,7 @@
 Ce repo est destiné à accueillir mes solutions des différentes boxes du site hack the box.
 
 ## Facile
-Blue - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;;&emsp;&emsp;
+Blue - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Legacy - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Lame - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Jerry - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
