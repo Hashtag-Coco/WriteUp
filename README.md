@@ -15,7 +15,7 @@ Grandpa - [:heavy_check_mark:]</br>
 Sense - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;&ensp;&nbsp;&nbsp;&nbsp;
 Beep - [:heavy_check_mark:] &ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;&ensp;
 Mirai - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;&nbsp;
-Shocker - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;
+Shocker - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;
 Devel - [:heavy_check_mark:]</br>
 Nibbles - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 Bank - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
