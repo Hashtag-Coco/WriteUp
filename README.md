@@ -13,7 +13,7 @@ Blocky - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&emsp;&ensp;&nbsp;&nbsp;
 Optimum - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&nbsp;
 Grandpa - [:heavy_check_mark:]</br>
 Sense - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;&ensp;&nbsp;&nbsp;&nbsp;
-Beep - [:heavy_check_mark:] &ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
+Beep - [:heavy_check_mark:] &ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;&ensp;
 Mirai - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 Shocker - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 Devel - [:heavy_check_mark:]</br>
