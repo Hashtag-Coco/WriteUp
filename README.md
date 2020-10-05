@@ -2,12 +2,12 @@
 Ce repo est destiné à accueillir mes solutions des différentes boxes du site hack the box.
 
 ## Facile
-Blue - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
+Blue - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;;&emsp;&emsp;
 Legacy - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Lame - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Jerry - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Netmon - [:heavy_check_mark:]</br>
-Granny - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
+Granny - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 Bashed - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;&emsp;
 Blocky - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&emsp;&ensp;&ensp;&ensp; 
 Optimum - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;
