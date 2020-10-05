@@ -10,7 +10,7 @@ Netmon - [:heavy_check_mark:]</br>
 Granny - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&emsp;&nbsp;
 Bashed - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;&emsp;&ensp;&nbsp;
 Blocky - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&emsp;&ensp;&nbsp;&nbsp;
-Optimum - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;
+Optimum - [:heavy_check_mark:]&ensp;&ensp;&ensp;&nbsp;
 Grandpa - [:heavy_check_mark:]</br>
 Sense - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;&emsp;&emsp;&emsp; 
 Beep - [:heavy_check_mark:] &ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
