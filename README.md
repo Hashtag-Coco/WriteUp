@@ -8,7 +8,7 @@ Lame - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Jerry - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Netmon - [:heavy_check_mark:]</br>
 Granny - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&emsp;&nbsp;
-Bashed - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;&emsp;&ensp;&nbsp;&nbsp;
+Bashed - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;&emsp;&ensp;&nbsp;
 Blocky - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&emsp;&ensp;&nbsp; 
 Optimum - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;
 Grandpa - [:heavy_check_mark:]</br>
