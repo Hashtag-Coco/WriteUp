@@ -7,7 +7,7 @@ Legacy - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Lame - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Jerry - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Netmon - [:heavy_check_mark:]</br>
-Granny - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+Granny - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 Bashed - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;&emsp;
 Blocky - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&emsp;&ensp;&ensp;&ensp; 
 Optimum - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;
