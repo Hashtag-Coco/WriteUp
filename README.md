@@ -18,8 +18,8 @@ Mirai - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;&nbsp;
 Shocker - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;
 Devel - [:heavy_check_mark:]</br>
 Nibbles - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-Bank - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
-Valentine - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;&emsp;
+Bank - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;&emsp;
+Valentine - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Arctic - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 SwagShop - [:heavy_check_mark:]</br>
 ServMon - [user :heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
