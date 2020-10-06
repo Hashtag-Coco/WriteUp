@@ -28,7 +28,7 @@ Help - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;&nbsp;
 Access - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&nbsp;
 Irked - [:heavy_check_mark:]</br>
 OpenAdmin - [:heavy_check_mark:]&ensp;&ensp;
-Postman - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;
+Postman - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;
 Curling - []&ensp;&ensp;&ensp;&ensp;&ensp;
 TraceBack - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 WriteUp - []</br>
