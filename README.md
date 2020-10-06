@@ -24,7 +24,7 @@ Arctic - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&ensp;
 SwagShop - [:heavy_check_mark:]</br>
 ServMon - [user :heavy_check_mark:]&nbsp;
 Sunday - [:heavy_check_mark:]&ensp;&ensp;&ensp;&emsp;&emsp;&ensp;&nbsp;
-Help - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
+Help - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;&nbsp;
 Access - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Irked - [:heavy_check_mark:]</br>
 OpenAdmin - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
