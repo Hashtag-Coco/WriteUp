@@ -29,7 +29,7 @@ Access - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&nbsp;
 Irked - [:heavy_check_mark:]</br>
 OpenAdmin - [:heavy_check_mark:]&ensp;&ensp;
 Postman - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;&nbsp;
-Curling - []&ensp;&ensp;&ensp;&ensp;&ensp;
+Curling - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 TraceBack - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 WriteUp - []</br>
 Active - []&ensp;&ensp;&ensp;&ensp;&ensp;
