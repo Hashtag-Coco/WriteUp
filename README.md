@@ -45,6 +45,6 @@ LaCasaDePapel - []</br>
 FriendZone - []&ensp;&ensp;&ensp;&ensp;&ensp;
 Nest - []&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Safe - []&ensp;&ensp;&ensp;&ensp;&ensp;
-Frolic - []&ensp;&ensp;&ensp;&ensp;&ensp;
+Frolic - []&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 Forest - []</br>
 Admirer - []&ensp;&ensp;&ensp;&ensp;&ensp;
