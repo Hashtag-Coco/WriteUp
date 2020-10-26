@@ -33,7 +33,7 @@ Curling - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;
 TraceBack - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 WriteUp - [:heavy_check_mark:]</br>
 Active - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;
-Networked - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+Networked - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 Bastion - []&ensp;&ensp;&ensp;&ensp;&ensp;
 Bounty - []&ensp;&ensp;&ensp;&ensp;&ensp;
 Traverxec - []</br>
