@@ -34,8 +34,8 @@ TraceBack - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 WriteUp - [:heavy_check_mark:]</br>
 Active - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;
 Networked - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
-Bastion - [user :heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
-Bounty - []&ensp;&ensp;&ensp;&ensp;&ensp;
+Bastion - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
+Bounty - [user :heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 Traverxec - []</br>
 Sauna - []&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
 Haystack - []&ensp;&ensp;&ensp;&ensp;&ensp;
