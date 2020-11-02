@@ -1,2 +1,2 @@
-![Pic1](Image/traverxec1.PNG?raw=true)</br>
+![Pic1](img/traverxec1.PNG?raw=true) </br>
 
