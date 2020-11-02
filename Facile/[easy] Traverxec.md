@@ -25,3 +25,11 @@ Nous allons faire une énumération des fichiers et dossiers présents sur le si
 $ dirsearch -w wordlist -e "php,txt" -f -t 100 -x 400,403,404,501 -u http://10.10.10.165/
 ```
 ![Pic3](../img/traverxec3.PNG?raw=true) </br>
+
+# Obtenir un accès utilisateur
+Nous avons vu que le serveur web en écoute était un nostromo 1.9.6, ce qui n'est pas commun, nous allons voir s'il existe un exploit pour 
+cette version avec searchsploit :
+```bash
+$ searchsploit nostromo
+```
+![Pic4](../img/traverxec4.PNG?raw=true) </br>
