@@ -61,5 +61,21 @@ $ python -c "import pty;pty.spawn('/bin/bash')"
 $ find / -type d -perm 0755 2>/dev/null
 ```
 ![Pic8](../img/traverxec8.PNG?raw=true) </br>
-Un résultat plutot dense mais nous pouvons voir que nous avons accès a plusieurs fichiers de Nostromo, y compris son fichier de configuration :
+Un résultat (non-exhaustif) plutot dense mais nous pouvons voir que nous avons accès a plusieurs fichiers de Nostromo, y compris son fichier de configuration nhttpd.conf :
 ```bash
+$ cat /var/nostromo/conf/nhttpd.conf
+$ cat /var/nostromo/conf/.htpasswd
+```
+![Pic9](../img/traverxec9.PNG?raw=true) </br>
+Le fichier nhttpd.conf va lire le mot de passe de l'utilisateur david dans le fichier .htpasswd, grâce à lui nous avons son hash, que nous crackons avec john :
+```bash
+$ john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt
+```
+![Pic10](../img/traverxec10.PNG?raw=true) </br>
+Nous avons donc un utilisateur et son mot de passe : david:Nowonly4me</br>
+Malheureusement, ce mot de passe n'est que pour le serveur web Nostromo. Néanmoins, dans le fichier nhttpd.conf, il y a un répertoire public_www de spécifié. Nous allons
+donc commencer l'énumération par là-bas :
+```bash
+$ ls -aril /home/david/public_www
+```
+![Pic11](../img/traverxec11.PNG?raw=true) </br>
