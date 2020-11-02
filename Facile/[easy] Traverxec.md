@@ -3,4 +3,9 @@
 # Présentation
 Traverxec est une box Linux dont l'adresse IP est 10.10.10.165.</br>
 
-Compétences mises en oeuvre :
+Compétences mises en oeuvre :</br>
+* Enumération des ports et services d'une machine distante.
+
+
+</br>
+# Enumération initiale
