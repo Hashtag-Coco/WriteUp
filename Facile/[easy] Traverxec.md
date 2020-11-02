@@ -8,4 +8,20 @@ Compétences mises en oeuvre :</br>
 
 
 </br>
+
 # Enumération initiale
+
+Nous commençons l'énumération par les ports et services disponibles avec nmap :
+```bash
+$ nmap -T4 -A 10.10.10.165
+```
+![Pic2](../img/traverxec2.PNG?raw=true) </br>
+Deux ports sont ouverts :</br>
+* 22 pour un OpenSSH en version 7.9
+* 80 pour un serveur web nostromo en version 1.9.6
+</br>
+Nous allons faire une énumération des fichiers et dossiers présents sur le site web avec dirsearch :</br>
+```bash
+$ dirsearch -w wordlist -e "php,txt" -f -t 100 -x 400,403,404,501 -u http://10.10.10.165/
+```
+![Pic3](../img/traverxec3.PNG?raw=true) </br>
