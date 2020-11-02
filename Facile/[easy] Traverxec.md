@@ -100,3 +100,6 @@ $ ssh -i id_rsa david@10.10.10.165
 passphrase : hunter
 ```
 ![Pic14](../img/traverxec14.PNG?raw=true) </br>
+
+# Obtenir un accès root
+Le secret pour les elévation de privilège, c'est l'énumération. 
