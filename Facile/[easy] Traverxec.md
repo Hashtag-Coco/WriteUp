@@ -79,3 +79,18 @@ donc commencer l'énumération par là-bas :
 $ ls -aril /home/david/public_www
 ```
 ![Pic11](../img/traverxec11.PNG?raw=true) </br>
+Nous voyons un dossier protected-file-area qui contient une archive que nous allons dézipper :
+```bash
+$ ls protected-file-area
+$ cd protected-file-area
+$ cp backup-ssh-identity-files.tgz /tmp/
+$ tar zxvf /tmp/backup-ssh-identity-files.tgz
+```
+![Pic12](../img/traverxec12.PNG?raw=true) </br>
+Des fichiers concernant ssh, nous pouvons alors récupérer id_rsa pour se connecter à distance sur la machine en ssh, il va falloir cracker la passphrase avec john :
+```bash
+$ ssh2john.py id_rsa > passphrase_hash
+$ john passphrase_hash --wordlist=/usr/share/wordlists/rockyou.txt
+```
+![Pic13](../img/traverxec13.PNG?raw=true) </br>
+
