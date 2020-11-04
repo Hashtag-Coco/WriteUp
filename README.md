@@ -37,8 +37,8 @@ Networked - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 Bastion - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 Bounty - [user :heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 Traverxec - [:heavy_check_mark:]</br>
-Sauna - []&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
-Haystack - []&ensp;&ensp;&ensp;&ensp;&ensp;
+Sauna - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
+Haystack - [user :heavy_check_mark]&ensp;&ensp;&ensp;&ensp;&ensp;
 Heist - []&ensp;&ensp;&ensp;&ensp;&ensp;
 Teacher - []&ensp;&ensp;&ensp;&ensp;&ensp;
 LaCasaDePapel - []</br>
