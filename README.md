@@ -48,4 +48,4 @@ Safe - []&ensp;&ensp;&ensp;&ensp;&ensp;
 Frolic - []&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 Forest - []</br>
 Admirer - []&ensp;&ensp;&ensp;&ensp;&ensp;
-Remote - []&ensp;&ensp;&ensp;&ensp;&ensp;
+Remote - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
