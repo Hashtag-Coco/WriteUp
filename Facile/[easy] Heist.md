@@ -4,6 +4,9 @@
 Heist est une machine Windows dont l'adresse IP est 10.10.10.149.</br>
 Compétences mises en oeuvre :
 * Enumération des ports et services d'une machine distante.
+* Enumération des ports et services d'un site web.
+* Enumération des utilisateurs d'une machine local windows.
+* Dump d'un processus qui contient un mot de passe.
 </br>
 
 # Enumération initiale
