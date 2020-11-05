@@ -33,5 +33,22 @@ Maintenant que nous avons des mots de passe et un nom d'utilisateur, nous pouvon
 port de Winrm est ouvert :</br>
 ![Pic10](../img/heist10.PNG?raw=true) </br>
 Le port winrm est ouvert, nous pouvons donc tenter les différentes combinaisons d'identifiant et mot de passe que nous avons en se connectant avec evil-winrm. Sauf que l'on a une erreur d'authorisation, ce qui veux dire
-que le compte Hazard ne peut pas se connecter en winrm.</br>
-Le script 
+que le compte Hazard ne peut pas se connecter en winrm. En revanche le couple Hazard:stealthlagent nous permet de nous connecter avec smbclient. / </br>
+Le script lookupsid.py de impacket nous permet d'énumérer les comptes locaux :
+```bash
+$ python lookupsid.py ./hazard@10.10.10.149
+```
+![Pic11](../img/heist11.PNG?raw=true) </br>
+Plusieurs nouveau idenfitiants intéréssants : Chase / Jason / support.</br>
+En essayant les mots de passes sur chacun des idenfitiants, le couple Chase:Q4)sJu\Y8qz*A3?d fonctionne avec evil-winrm et nous permet d'obtenir le fichier user.txt.</br>
+![Pic12](../img/heist12.PNG?raw=true) </br>
+
+# Obtenir un accès administrateur
+
+Nous faisons l'énumération avec winPEAS :
+```bash
+evil-winrm > upload /home/parrot/DesktopwinPEASx64.exe
+evil-winrm > ./winPEASx64.exe all
+```
+Dans l'énumération, winPEAS nous dit qu'il y a du mot de passe d'enregistré dans Firefox :</br>
+![Pic13](../img/heist13.PNG?raw=true) </br>
