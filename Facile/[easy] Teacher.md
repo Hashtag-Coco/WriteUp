@@ -56,3 +56,19 @@ $ john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt --format=Raw-MD5
 ![Pic11](../img/teacher11.PNG?raw=true) </br>
 Nous pouvons alors nous identifier en tant que Giovanni et récuperer le user.txt :</br>
 ![Pic12](../img/teacher12.PNG?raw=true) </br>
+
+# Obtenir un accès administrateur
+En réalisant l'énumération de base, on s'aperçopit que dans le /home de Giovanni, un fichier backup_courses.tar.gz est créé toutes les x minutes, et après plusieurs énumération, un script suspect est localisé :
+```bash
+$ ls /usr/bin
+$ cat /usr/bin/backup.sh 
+```
+![Pic13](../img/teacher13.PNG?raw=true) </br>
+Le script consiste à décompresser l'archive backup_courses et de mettre les permissions 777 dans /home/giovanni/work/tmp. Donc si on met un lien symbolique dans le dossier tmp vers /root, logiquement 
+le dossier /root sera en 777 en récursif.
+```bash
+$ cd ~/work/tmp
+$ ln -s /root bonjour
+$ cat /root/root.txt
+```
+![Pic14](../img/teacher14.PNG?raw=true) </br>
