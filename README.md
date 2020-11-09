@@ -39,7 +39,7 @@ Bounty - [user :heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
 Traverxec - [:heavy_check_mark:]</br>
 Sauna - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;
 Haystack - [user :heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;
-Heist - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
+Heist - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 Teacher - []&ensp;&ensp;&ensp;&ensp;&ensp;
 LaCasaDePapel - []</br>
 FriendZone - []&ensp;&ensp;&ensp;&ensp;&ensp;
