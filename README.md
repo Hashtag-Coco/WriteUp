@@ -43,7 +43,7 @@ Heist - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 Teacher - []&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 LaCasaDePapel - []</br>
 FriendZone - []&ensp;&ensp;&ensp;&ensp;&ensp;
-Nest - []&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;
+Nest - []&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;&emsp;
 Safe - []&ensp;&ensp;&ensp;&ensp;&ensp;
 Frolic - []&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 Forest - []</br>
