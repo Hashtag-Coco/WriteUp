@@ -41,7 +41,7 @@ Sauna - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;
 Haystack - [user :heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;
 Heist - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 Teacher - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-LaCasaDePapel - []</br>
+LaCasaDePapel - [:heavy_check_mark:]</br>
 FriendZone - []&ensp;&ensp;&ensp;&ensp;&ensp;
 Nest - []&ensp;&ensp;&ensp;&ensp;&ensp;&emsp;&emsp;&emsp;
 Safe - []&ensp;&ensp;&ensp;&ensp;&ensp;
