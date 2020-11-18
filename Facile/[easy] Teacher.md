@@ -4,6 +4,11 @@
 Teacher est une machine Linux qui a pour adresse IP 10.10.10.153.</br>
 Compétences mises en oeuvre :
 * Enumération des ports et services d'une machine distante.
+* Enumération des fichiers et dossiers d'un site web.
+* Recherche d'indice dans une image.
+* Exploitation d'une RCE authentifiée.
+* Crackage de mot de passe.
+* Utilisation de lien symbolique pour l'accès Admin.
 </br>
 
 # Enumération initiale
