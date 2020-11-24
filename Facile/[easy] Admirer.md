@@ -35,6 +35,22 @@ Et **credentials.txt** :</br>
 Nous pouvons déjà établir une liste de nom d'utilisateur avec le contacts.txt et une liste de mot de passe avec credentials.txt, et tester 
 les différentes combinaisons en ssh :
 ```bash
-$ crackmapexec ssh 10.10.10.187 -u liste_user -p liste_pass
+$ hydra -L liste_user -P liste_pass 10.10.10.187 -t 10 ssh
 ```
-![Pic8](../img/admirer7.PNG?raw=true) </br>
+![Pic8](../img/admirer8.PNG?raw=true) </br>
+Aucune combinaison fonctionne, nous allons donc énumérer le ftp avec l'identifiant trouvé:
+```bash
+$
+ftp > ls
+```
+![Pic9](../img/admirer9.PNG?raw=true) </br>
+Nous avons accès à deux fichiers, un dump sql qui contient des informations sur une table et l'info sur la BDD : MariaDB. </br>
+L'archive contient beaucoup de fichiers, dont des credentials :</br>
+![Pic10](../img/admirer10.PNG?raw=true) </br>
+Dans la capture, dans le TODO, nous savons que le developpeur n'a pas implémenter la DBB, il faut donc trouver une solution open
+source alternative. Avec ces mots clé, nous tombons sur **Adminer**.</br>
+Suite à cette étape, nous trouvons adminer.php :</br>
+![Pic11](../img/admirer11.PNG?raw=true) </br>
+Malheureusement aucun credentials ne fonctionnent ici. Nous recherchons alors une vuln pour adminer 4.6.2 :</br>
+https://www.foregenix.com/blog/serious-vulnerability-discovered-in-adminer-tool</br>
+Le principe est de faire notre BDD puis de la connecter sur celle à distance.
