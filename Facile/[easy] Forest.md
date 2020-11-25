@@ -94,14 +94,17 @@ $ bloodhound
 ```
 </br>
 Maintenant nous importons les données dans bloodhound :</br>
+
 ![Pic12](../img/forest12.PNG?raw=true) </br>
 Une fois finit, on va faire une recherche pour trouver le chemin le plus court vers l'administrateur du domaine :</br>
+
 ![Pic13](../img/forest13.PNG?raw=true) </br>
 Nous avons alors un résultat graphique très sympa :</br>
+
 ![Pic14](../img/forest14.PNG?raw=true) </br>
 Il faut savoir, que sur chaque arête se trouve un élément (Member of / contain / Genericall ..) et si on clique droit sur cet élément
 et que l'on clique sur Help, Bloodhound nous donne un descriptif très complet. Dans notre cas, on a GenericAll et WriteDacl qui, dans l'help, ont une rubrique "Abuse Info" pour 
-expliquer en détail comment epxloiter l'élément.
+expliquer en détail comment exploiter l'élément.
 
 ## Analyser le résultat pour voir l'exploit
 En visualisant le graphique, on peut voir qu'il faudra deux jumps pour accéder à l'Administrateur depuis 
