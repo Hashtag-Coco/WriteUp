@@ -49,6 +49,6 @@ Frolic - []&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 Forest - [User :heavy_check_mark:]</br>
 Admirer - [en cours]&ensp;&ensp;&ensp;&ensp;&ensp;
 Remote - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;
-Blunder - []&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+Blunder - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 Tabby - []&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 Buff - []&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</br>
