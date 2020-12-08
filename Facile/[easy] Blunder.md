@@ -7,7 +7,7 @@ Compétences mises en oeuvre :
 * Enumération des ports et services d'une machine distante.
 * Enumération des fichiers et dossiers d'un site web.
 * Recherche d'exploit.
-* Elevation par CVE-2019-14287
+* Elevation par CVE-2019-14287 (faille sudo 2019)
 </br>
 
 # Enumération initiale
