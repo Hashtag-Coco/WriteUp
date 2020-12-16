@@ -44,7 +44,7 @@ Teacher - [:heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 LaCasaDePapel - [:heavy_check_mark:]</br>
 FriendZone - [:heavy_check_mark:]&ensp;&ensp;&ensp;
 Nest - [user :heavy_check_mark:]&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-Safe - []&ensp;&ensp;&ensp;&ensp;&ensp;
+Safe - []&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 Frolic - []&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 Forest - [User :heavy_check_mark:]</br>
 Admirer - [en cours]&ensp;&ensp;&ensp;&ensp;
